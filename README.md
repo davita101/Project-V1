@@ -9,3 +9,7 @@ This site is for demonstration to my skills
 - gsap
 
 # Add mote information after I finish # Project-V1
+Making NFT simple website
+
+
+
