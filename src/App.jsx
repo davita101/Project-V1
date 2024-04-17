@@ -3,7 +3,7 @@ import { Navbar, Hero, Info, Product, Sellers, Footer } from "./components"
 function App() {
 
   return (
-    <div>
+    <div className="max-w-[100rem] main-div">
       <header>
         <Navbar />
       </header>
