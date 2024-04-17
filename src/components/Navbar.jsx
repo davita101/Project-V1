@@ -6,7 +6,7 @@ function Navbar() {
     const [click, setClick] = useState(false)
     const handelClick = () => setClick(!click)
     return (
-        <div className='flex justify-between w-full px-[3rem] items-center'>
+        <div className='flex justify-between w-full items-center'>
             <span className=' text-blue-600 font-bold text-[2em] cursor-pointer'>Davit'sApp</span>
             {/* DESKTOP */}
             <ul className='md:flex hidden gap-[1rem] '>

@@ -9,7 +9,7 @@ function Hero() {
     const [clickMb, setClickMb] = useState(false)
 
     return (
-        <div className=' p-[3rem] flex justify-between md:flex-row flex-col-reverse items-center'>
+        <div className='flex justify-between md:flex-row flex-col-reverse items-center'>
             <div className='flex flex-col gap-[1rem]'>
                 <h1 className='xl:text-[5em] text-[3em] font-bold'>Let's Buy Some <br />
                     <span className=' text-blue-500'>NFT</span></h1>

@@ -20,4 +20,5 @@ html{
 .main-div{
     margin: 0 auto;
     overflow: hidden;
+    padding: 3rem;
 }
