@@ -9,6 +9,9 @@
 html{
     scroll-behavior: smooth;
 }
+b0dy{
+    height: 100vh;
+}
 
 *{
     margin: 0;
@@ -17,8 +20,31 @@ html{
     list-style: none;
     font-family: "Poppins", sans-serif;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .main-div{
     margin: 0 auto;
     overflow: hidden;
-    padding: 3rem;
+    padding: 1%;
+}
+.active {
+    background: black;
+    color: white;
+    width: 250px;
+    right: -7.3rem;
+    padding-right: 3rem;
+}
+@media (max-width: 500px) {
+    .main-div{
+        padding: 1rem;
+    }
+    .body{
+        height: 100%;
+    }
+}
+.nav--bg{
+    background: hsl(0, 0%, 0%, .5);
 }

@@ -1,14 +1,16 @@
-import React from 'react'
-import { infoText } from './constants'
+import React, { useState } from 'react'
 import IconRenderer from './IconRenderer'
 function Card(props) {
+    const [over, setOver] = useState(true)
     return (
-        <div>
-            <dir>
-                <IconRenderer icon={props.icon} />
-                <h2>{props.heading}</h2>
+        <div onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)} className='bg-white transition-all shadow-lg cursor-pointer p-[1rem] rounded-xl
+        hover:bg-black hover:text-white
+        hover:translate-y-[-1rem] '>
+            <dir className='flex items-center gap-[.5rem]'>
+                <IconRenderer icon={props.icon} class={`${props.class}`} />
+                <h2 className='text-[1em] font-bold '>{props.heading}</h2>
             </dir>
-            <h2>{props.paragraph}</h2>
+            <p className={`max-w-[25rem] ${!over ? 'opacity-[.7]' : 'opacity-1'} text-[1em] font-bold`}>{props.paragraph}</p>
         </div>
     )
 }

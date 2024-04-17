@@ -1,6 +1,6 @@
 import { BiWallet } from 'react-icons/bi'
-import { CiShoppingCart } from 'react-icons/ci'
 import { AiOutlineAppstoreAdd } from 'react-icons/ai'
+import { LuShoppingCart } from 'react-icons/lu'
 
 export const navLinks = [
     { label: "Home", route: '/' },
@@ -20,16 +20,16 @@ export const infoText = [
     {
         icon: BiWallet,
         heading: "Collect Wallet",
-        paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo fuga laborum fugiat ducimus, nam deserunt, iure veniam ab magni commodi veritatis quaerat officiis necessitatibus repellendus eum asperiores nulla quibusdam nihil."
+        paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo fuga laborum fugiat ducimus, nam deserunt, iure "
     },
     {
-        icon: CiShoppingCart,
+        icon: LuShoppingCart,
         heading: "Nft Marketplace",
-        paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo fuga laborum fugiat ducimus, nam deserunt, iure veniam ab magni commodi veritatis quaerat officiis necessitatibus repellendus eum asperiores nulla quibusdam nihil."
+        paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo fuga laborum fugiat ducimus, nam deserunt, iure "
     },
     {
         icon: AiOutlineAppstoreAdd,
         heading: "Launch DApps",
-        paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo fuga laborum fugiat ducimus, nam deserunt, iure veniam ab magni commodi veritatis quaerat officiis necessitatibus repellendus eum asperiores nulla quibusdam nihil."
+        paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo fuga laborum fugiat ducimus, nam deserunt, iure "
     }
 ]
