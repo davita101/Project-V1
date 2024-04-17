@@ -9,3 +9,4 @@ export { default as Sellers } from './Sellers'
 // Utils
 export { default as Card } from './Card'
 export { default as IconRenderer } from './IconRenderer'
+export { default as NftCard } from './NftCard'

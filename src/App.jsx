@@ -5,11 +5,11 @@ function App() {
   return (
     <div className="max-w-[100rem] main-div">
       <header>
-        <Navbar />
+        <Navbar /> {/*✅*/}
       </header>
       <main>
-        <Hero />
-        <Info />
+        <Hero /> {/*✅*/}
+        <Info /> {/*✅*/}
         <Product />
         <Sellers />
       </main>
