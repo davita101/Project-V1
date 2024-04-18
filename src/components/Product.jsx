@@ -1,6 +1,5 @@
 import React from 'react'
 import { productText } from '../constants'
-import { FaBtc } from 'react-icons/fa6';
 import NftCard from './NftCard';
 
 function Product() {

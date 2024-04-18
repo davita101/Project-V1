@@ -11,7 +11,9 @@ html{
 }
 body{
     height: 100vh;
-    background: #ffffff;
+    background: linear-gradient( rgb(231, 231, 231), white) no-repeat ;
+    background-size: cover;
+    width: 100%;
 }
 
 *{
@@ -42,7 +44,6 @@ main{
 @media (max-width: 800px) {
     main{
         padding-top: 3rem;
-
     }
     .main-div{
         padding: 1rem;
