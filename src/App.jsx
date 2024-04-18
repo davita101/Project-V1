@@ -10,7 +10,7 @@ function App() {
       <main>
         <Hero /> {/*✅*/}
         <Info /> {/*✅*/}
-        <Product />
+        <Product /> {/*✅*/}
         <Sellers />
       </main>
       <footer>

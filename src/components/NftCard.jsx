@@ -8,7 +8,7 @@ function NftCard() {
 
     const [click, setClick] = useState(false)
     return (
-        <div className="flex gap-[1rem] flex-wrap md:justify-start justify-center my-[1rem] ">
+        <div className="flex gap-[1rem] flex-wrap 2xl:justify-start justify-center my-[1rem] ">
             {productText.map((item, index) => {
                 if (item.nftJson) {
                     return item.nftJson.map((category, index) => (
