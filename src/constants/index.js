@@ -33,3 +33,55 @@ export const infoText = [
         paragraph: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo fuga laborum fugiat ducimus, nam deserunt, iure "
     }
 ]
+
+export const productText = [
+    [
+        {
+            route: '/',
+            label: "Art"
+        },
+        {
+            route: '/',
+            label: "Collectibles"
+        },
+        {
+            route: '/',
+            label: "Real Estate"
+        },
+        {
+            route: '/',
+            label: "Monkey"
+        }
+    ],
+    [
+        {
+            heading: "Monkey",
+            btc: "0.29",
+            time: [3, 4, 4],
+            left: 2,
+            own: 24
+        },
+
+        {
+            heading: "Metal Bot",
+            btc: "0.54",
+            time: [1, 5, 55],
+            left: 4,
+            own: 56
+        },
+        {
+            heading: "Squirrel",
+            btc: "0.20",
+            time: [0, 5, 37],
+            left: 8,
+            own: 23
+        },
+        {
+            heading: "North Face",
+            btc: "1",
+            time: [2, 3, 5],
+            left: 4,
+            own: 56
+        },
+    ]
+]
