@@ -11,7 +11,7 @@ function App() {
         <Hero /> {/*✅*/}
         <Info /> {/*✅*/}
         <Product /> {/*✅*/}
-        <Sellers />
+        <Sellers /> {/*✅*/}
       </main>
       <footer>
         <Footer />

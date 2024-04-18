@@ -1,7 +1,7 @@
 import { BiWallet } from 'react-icons/bi'
 import { AiOutlineAppstoreAdd } from 'react-icons/ai'
 import { LuShoppingCart } from 'react-icons/lu'
-import { MetalBotNft, MonkeyNft, SquirrelNft, TheNorthFaceNft } from '../assets'
+import { BenAvatar, DavitAvatar, GeorgeAvatar, JaysonAvatar, MetalBotNft, MonkeyNft, SquirrelNft, TheNorthFaceNft } from '../assets'
 
 export const navLinks = [
     { label: "Home", route: '/' },
@@ -93,4 +93,32 @@ export const productText = [
             },
         ]
     }
+]
+
+export const sellersInfo = [
+    {
+        img: BenAvatar,
+        name: "Ben",
+        view: "19.2k"
+
+    },
+    {
+        img: JaysonAvatar,
+        name: "jayson",
+        view: "15.2k"
+
+    },
+    {
+        img: GeorgeAvatar,
+        name: "George",
+        view: "17.4k"
+
+    },
+    {
+        img: DavitAvatar,
+        name: "Davit",
+        view: "16.6k"
+
+    }
+
 ]

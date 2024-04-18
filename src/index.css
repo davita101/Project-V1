@@ -8,10 +8,10 @@
 
 html{
     scroll-behavior: smooth;
+    background: rgb(250, 250, 250);
 }
 body{
     height: 100vh;
-    background: linear-gradient( rgb(231, 231, 231), white) no-repeat ;
     background-size: cover;
     width: 100%;
 }
