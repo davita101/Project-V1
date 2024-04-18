@@ -1,21 +1,24 @@
 import React from 'react'
 import { productText } from '../constants'
+import { FaBtc } from 'react-icons/fa6';
+import NftCard from './NftCard';
 
 function Product() {
     return (
         <div>
-            <div>
-                <h2>Super Hot NFT's</h2>
+            <div className='flex flex-col gap-[1.5rem]'>
+                <h2 className='text-[2em] font-bold'>Super Hot <span>NFT's</span></h2>
 
-                <ul>
+                <ul className='flex gap-[1rem] flex-wrap'>
                     {productText.map((item, index) => {
                         // Check if categoryJson exists before mapping over it
                         if (item.categoryJson && Array.isArray(item.categoryJson))
                             return item.categoryJson.map((category, index) => (
-                                <li key={index}>{category.label}</li>
+                                <li key={index} className='bg-gray-200 rounded-xl px-[.8rem] py-[.2rem] cursor-pointer hover:bg-black hover:text-white ease-in transition-all '>{category.label}</li>
                             ));
                     })}
                 </ul>
+                <NftCard />
 
             </div>
         </div>

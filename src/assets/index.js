@@ -1,1 +1,5 @@
-export { default as Nft } from './nft-img.png'
+export { default as Nft } from './MainImg.png'
+export { default as MetalBotNft } from './MetaBotNft.webp'
+export { default as MonkeyNft } from './MonkeyNft.jpg'
+export { default as SquirrelNft } from './SquirrelNft.png'
+export { default as TheNorthFaceNft } from './TheNorthFaceNft.png'

@@ -1,6 +1,7 @@
 import { BiWallet } from 'react-icons/bi'
 import { AiOutlineAppstoreAdd } from 'react-icons/ai'
 import { LuShoppingCart } from 'react-icons/lu'
+import { MetalBotNft, MonkeyNft, SquirrelNft, TheNorthFaceNft } from '../assets'
 
 export const navLinks = [
     { label: "Home", route: '/' },
@@ -58,30 +59,34 @@ export const productText = [
     {
         nftJson: [
             {
+                img: MonkeyNft,
                 heading: "Monkey",
-                btc: "0.29",
+                price: "0.29",
                 time: [3, 4, 4],
                 left: 2,
                 own: 24
             },
 
             {
+                img: MetalBotNft,
                 heading: "Metal Bot",
-                btc: "0.54",
+                price: "0.54",
                 time: [1, 5, 55],
                 left: 4,
                 own: 56
             },
             {
+                img: SquirrelNft,
                 heading: "Squirrel",
-                btc: "0.20",
+                price: "0.20",
                 time: [0, 5, 37],
                 left: 8,
                 own: 23
             },
             {
+                img: TheNorthFaceNft,
                 heading: "North Face",
-                btc: "1",
+                price: "1",
                 time: [2, 3, 5],
                 left: 4,
                 own: 56
