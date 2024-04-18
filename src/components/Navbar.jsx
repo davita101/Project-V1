@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { navLinks } from './constants'
+import { navLinks } from '../constants'
 import { FaBarsStaggered } from 'react-icons/fa6'
 import { IoClose } from 'react-icons/io5'
 function Navbar() {

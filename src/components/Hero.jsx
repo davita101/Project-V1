@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { heroText } from './constants'
+import { heroText } from '../constants'
 import { Nft } from '../assets'
-import { CiShop } from 'react-icons/ci'
 import { CgShoppingBag } from 'react-icons/cg'
 
 function Hero() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from '../components'
-import { infoText } from './constants'
+import { infoText } from '../constants'
 
 
 
@@ -12,7 +12,7 @@ function Info() {
                 <h2 className='text-[2em] font-bold'>Sell Your NFT's</h2>
                 <div className='flex gap-[2rem] flex-wrap items-center justify-center'>
                     {infoText.map((item, index) => (
-                        <Card heading={item.heading} class={'text-[2rem]'} paragraph={item.paragraph} icon={item.icon} />
+                        <Card key={index} heading={item.heading} class={'text-[2rem]'} paragraph={item.paragraph} icon={item.icon} />
                     ))}
                 </div>
             </div>

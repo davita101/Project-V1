@@ -5,8 +5,6 @@ function NftCard() {
         <div>
             <div>
                 <h2>Supper Your NFT's</h2>
-
-
             </div>
         </div>
     )

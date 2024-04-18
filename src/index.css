@@ -9,8 +9,9 @@
 html{
     scroll-behavior: smooth;
 }
-b0dy{
+body{
     height: 100vh;
+    background: #ffffff;
 }
 
 *{
@@ -28,7 +29,8 @@ main{
 .main-div{
     margin: 0 auto;
     overflow: hidden;
-    padding: 1%;
+    padding: 2rem;
+    padding-top: 0;
 }
 .active {
     background: black;
