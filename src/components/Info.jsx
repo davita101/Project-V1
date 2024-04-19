@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Card } from '../components'
 import { infoText } from '../constants'
 
 
-
 function Info() {
+
     return (
         <div className='flex justify-between md:flex-row  flex-col-reverse items-center'>
             <div className='flex flex-col gap-[2rem] md:max-w-full max-w-[31rem] '>

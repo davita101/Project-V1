@@ -1,14 +1,35 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { productText } from "../constants"
 import { FaBtc } from "react-icons/fa6"
+import gsap from "gsap"
 function NftCard() {
     const [over, setOver] = useState(true)
     const [indexCard, setIndexCard] = useState(null)
+    useEffect(() => {
+        const nftCards = document.getElementById('nftCards')
+        gsap.fromTo(nftCards.children, {
+            y: 0,
+            opacity: 1
+
+
+        }, {
+            opacity: 1,
+            y: 50, // Ending position (move up by 50 pixels)
+            duration: .1, // Duration of the animation
+            ease: 'power1.out', // Easing function for smoother animation
+            yoyo: true, // Revert to the starting position after the animation
+            repeat: 2,
+            stagger: 1,
+        })
+
+
+    }, [])
+
 
 
     const [click, setClick] = useState(false)
     return (
-        <div className="flex gap-[2rem] flex-wrap 2xl:justify-start justify-center my-[1rem] ">
+        <div id="nftCards" className="flex gap-[2rem] flex-wrap 2xl:justify-start justify-center my-[1rem] ">
             {productText.map((item, index) => {
                 if (item.nftJson) {
                     return item.nftJson.map((category, index) => (

@@ -13,7 +13,6 @@ function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
             const newScrollY = window.scrollY;
-            console.log("ScrollY:", newScrollY);
             setScrollY(newScrollY);
         };
 

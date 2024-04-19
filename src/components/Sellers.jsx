@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { sellersInfo } from '../constants'
+import gsap from 'gsap'
+
 
 function Sellers() {
+
     const [over, setOver] = useState(true)
     const [indexAvatar, setIndexAvatar] = useState(null)
+
     return (
         <div className='flex flex-col gap-[1rem]'>
             <h2 className='text-[2em] font-bold'>Best Sellers</h2>

@@ -3,6 +3,7 @@ import { productText } from '../constants'
 import NftCard from './NftCard';
 
 function Product() {
+
     return (
         <div>
             <div className='flex flex-col gap-[1.5rem]'>
