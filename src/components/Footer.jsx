@@ -4,9 +4,9 @@ import IconRenderer from './IconRenderer'
 function Footer() {
     return (
         <div className='flex md:flex-row flex-col bg-black justify-between items-center text-white mt-[7rem]  md:text-start text-center'>
-            <div className='left-[0rem] bottom-[auto] bg-black w-full z-[-1] h-[300px] absolute' />
+            <div className='left-[0rem] bottom-[auto] bg-black w-full z-[-1] sm:h-[300px] h-[500px] absolute' />
 
-            <h2 className='xl:text-[3em] text-[2rem]'>
+            <h2 className='xl:text-[3em] text-[2rem] md:mt-[0] mt-[5rem]'>
                 Create, Explore & Collect <br />
                 Abstract <span className='text-blue-500'>NFTs</span>
             </h2>
