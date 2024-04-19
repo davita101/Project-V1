@@ -5,9 +5,9 @@ import { BenAvatar, DavitAvatar, GeorgeAvatar, JaysonAvatar, MetalBotNft, Monkey
 import { FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa6'
 
 export const navLinks = [
-    { label: "Home", route: '/' },
-    { label: "About", route: '/about' },
-    { label: "Services", route: '/services' },
+    { label: "Home", route: '/hero' },
+    { label: "Services", route: '/info' },
+    { label: "Products", route: '/products' },
     { label: "Contact", route: '/contact' },
 ]
 

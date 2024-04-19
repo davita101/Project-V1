@@ -17,6 +17,7 @@ function Sellers() {
                         </div>
                     </div>
                 ))}
+
             </div>
         </div>
     )

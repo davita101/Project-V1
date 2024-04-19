@@ -23,7 +23,7 @@ function Footer() {
                 </ul>
                 <div>
                     {copyright.map(item => (
-                        <p className='md:text-right text-center text-[.8em] opacity-[.7]'>{item.copyright}</p>
+                        <p key='copyright' className='md:text-right text-center text-[.8em] opacity-[.7]'>{item.copyright}</p>
                     ))}
                 </div>
             </div>

@@ -1,20 +1,33 @@
 import { Navbar, Hero, Info, Product, Sellers, Footer } from "./components"
-
+import { Element } from "react-scroll"
 function App() {
 
   return (
-    <div className="max-w-[100rem] main-div">
+    <div className="main-div">
       <header>
-        <Navbar /> {/*✅*/}
+        <Element name="/" >
+          <Navbar /> {/*✅*/}
+        </Element>
       </header>
       <main>
-        <Hero /> {/*✅*/}
-        <Info /> {/*✅*/}
-        <Product /> {/*✅*/}
-        <Sellers /> {/*✅*/}
+        <Element name="/hero" >
+          <Hero /> {/*✅*/}
+        </Element>
+        <Element name="/info">
+          <Info /> {/*✅*/}
+        </Element>
+        <Element name="/products">
+          <Product /> {/*✅*/}
+        </Element>
+        <Element name="/sellers">
+          <Sellers /> {/*✅*/}
+        </Element>
       </main>
-      <footer>
-        <Footer /> {/*✅*/}
+      <footer >
+        <Element name="/contact">
+          <Footer /> {/*✅*/}
+        </Element>
+
       </footer>
     </div>
 

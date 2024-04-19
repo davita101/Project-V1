@@ -10,7 +10,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    height: 100vh;
     background: linear-gradient( rgb(231, 231, 231), white) no-repeat ;
     background-size: cover;
     width: 100%;
@@ -40,6 +39,8 @@ main{
     width: 250px;
     right: -7.3rem;
     padding-right: 3rem;
+    padding: .5rem;
+    border-radius: .5rem;
 }
 @media (max-width: 800px) {
     main{
