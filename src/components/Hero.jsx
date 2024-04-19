@@ -16,24 +16,24 @@ function Hero() {
         if (content) {
             // Split text into individual characters
             const characters = content.innerText.split('');
+            const counter = characters.length;
 
             // Clear the original content
             content.innerHTML = '';
 
             // Wrap each character in a span and append it back to the container
             characters.forEach((char, index) => {
-                let counter = characters.length
                 const charElement = document.createElement('span');
-                if (index == counter - 1 || index == counter - 2 || index == counter - 3) {
-                    charElement.classList.add('text-blue-500')
-                }
-                if (index == counter - 3) {
-                    const el = document.createElement('br')
+                if (index >= counter - 5) {
+                    charElement.classList.add('text-blue-500');
                 }
                 charElement.textContent = char;
                 content.appendChild(charElement);
             });
-            console.log()
+
+            // Add line break
+            const br = document.createElement('br');
+            content.appendChild(br);
 
             // Animate using GSAP
             gsap.from(content.children, {
@@ -43,7 +43,7 @@ function Hero() {
                 duration: 2,
                 ease: 'power4.out',
                 repeat: Infinity,
-                delay: '500ms'
+                delay: 0.5 // '500ms' changed to 0.5 (500 milliseconds)
             });
         } else {
             console.error("Element with ID 'heroText' not found.");
