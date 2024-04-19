@@ -8,7 +8,7 @@ function Footer() {
 
             <h2 className='xl:text-[3em] text-[2rem]'>
                 Create, Explore & Collect <br />
-                Abstract NFTs
+                Abstract <span className='text-blue-500'>NFTs</span>
             </h2>
             <div className='grid gap-[1rem]'>
                 <ul className='flex gap-[1rem] flex-wrap md:justify-end justify-center'>

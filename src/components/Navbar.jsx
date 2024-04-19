@@ -16,8 +16,8 @@ function Navbar() {
                     <li key={index} className=' hover:opacity-[.5] ease-in cursor-pointer transition-all'>{item.label}</li>
                 ))}
             </ul>
-            <div className='md:flex hidden gap-[0rem] items-center'>
-                <button className='bg-black transition-all ease-in hover:bg-transparent hover:text-black text-white p-2 rounded-[.3rem]'>Get Started</button>
+            <div className='md:flex hidden gap-[1rem] items-center'>
+                <button className='hover:bg-black hover:text-white transition-all py-[.5rem] px-[.5rem] rounded-[.3rem] cursor-pointer'>Get Started</button>
                 <span className='hover:bg-black hover:text-white transition-all py-[.5rem] px-[.5rem] rounded-[.3rem] cursor-pointer'>Login in</span>
             </div>
             {/* MOBILE */}
@@ -37,7 +37,7 @@ function Navbar() {
                 </ul>
                 {/* BUTTONS */}
                 <div className='flex gap-[1rem] items-center flex-col-reverse absolute right-[1.5rem] top-[14rem]'>
-                    <button className='bg-black transition-all ease-in hover:bg-transparent hover:border-2 text-white p-2 w-[8rem] rounded-[.3rem] hover:shadow-lg hover:translate-y-[-.5rem]   '>Get Started</button>
+                    <button className='border-2 w-[8rem]  text-center rounded-[.3rem] text-[#fff] cursor-pointer p-[.2rem]  hover:border-0 hover:bg-black hover:p-[.32rem] hover:w-[100%] hover:translate-y-[-.5rem] transition-all hover:shadow-lg'>Get Started</button>
                     <span className='border-2 w-[8rem]  text-center rounded-[.3rem] text-[#fff] cursor-pointer p-[.2rem]  hover:border-0 hover:bg-black hover:p-[.32rem] hover:w-[100%] hover:translate-y-[-.5rem] transition-all hover:shadow-lg' >Login in</span>
                 </div>
             </div>}

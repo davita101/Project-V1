@@ -6,7 +6,7 @@ function Product() {
     return (
         <div>
             <div className='flex flex-col gap-[1.5rem]'>
-                <h2 className='text-[2em] font-bold'>Super Hot <span>NFT's</span></h2>
+                <h2 className='text-[2em] font-bold'>Super Hot <span className='text-blue-500'>NFT's</span></h2>
 
                 <ul className='flex gap-[1rem] flex-wrap'>
                     {productText.map((item, index) => {
