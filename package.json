@@ -1,15 +1,18 @@
 {
+  "homepage": "https://davita101.github.io/project-v1/",
   "name": "project-v1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
     "gsap-trial": "^3.12.5",
     "react": "^18.2.0",
