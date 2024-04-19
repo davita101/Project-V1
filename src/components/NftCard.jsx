@@ -12,7 +12,7 @@ function NftCard() {
             {productText.map((item, index) => {
                 if (item.nftJson) {
                     return item.nftJson.map((category, index) => (
-                        <div onMouseOver={() => { setIndexCard(index), setOver(true) }} onMouseLeave={() => { setIndexCard(index), setOver(false) }} className='grid gap-[.6rem] p-[1rem] bg-white shadow-lg overflow-hidden rounded-2xl cursor-pointer transition-all hover:translate-y-[-1.5rem] hover:shadow-xl duration-[.1s] hover:bg-blue-500 ease-in '>
+                        <div onMouseOver={() => { setIndexCard(index), setOver(true) }} key={index} onMouseLeave={() => { setIndexCard(index), setOver(false) }} className='grid gap-[.6rem] p-[1rem] bg-white shadow-lg overflow-hidden rounded-2xl cursor-pointer transition-all hover:translate-y-[-1.5rem] hover:shadow-xl duration-[.1s] hover:bg-blue-500 ease-in '>
                             <img src={category.img} alt={category.heading} className='w-[300px] h-[250px] rounded-3xl' />
                             <h3 className='font-bold text-[1em]'>{category.heading}</h3>
                             <div className='flex justify-between'>

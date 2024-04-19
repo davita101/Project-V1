@@ -14,7 +14,7 @@ function App() {
         <Sellers /> {/*✅*/}
       </main>
       <footer>
-        <Footer />
+        <Footer /> {/*✅*/}
       </footer>
     </div>
 

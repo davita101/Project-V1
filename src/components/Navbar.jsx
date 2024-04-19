@@ -16,7 +16,7 @@ function Navbar() {
                     <li key={index} className=' hover:opacity-[.5] ease-in cursor-pointer transition-all'>{item.label}</li>
                 ))}
             </ul>
-            <div className='md:flex hidden gap-[1rem] items-center'>
+            <div className='md:flex hidden gap-[0rem] items-center'>
                 <button className='bg-black transition-all ease-in hover:bg-transparent hover:text-black text-white p-2 rounded-[.3rem]'>Get Started</button>
                 <span className='hover:bg-black hover:text-white transition-all py-[.5rem] px-[.5rem] rounded-[.3rem] cursor-pointer'>Login in</span>
             </div>

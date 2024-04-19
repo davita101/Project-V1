@@ -2,6 +2,7 @@ import { BiWallet } from 'react-icons/bi'
 import { AiOutlineAppstoreAdd } from 'react-icons/ai'
 import { LuShoppingCart } from 'react-icons/lu'
 import { BenAvatar, DavitAvatar, GeorgeAvatar, JaysonAvatar, MetalBotNft, MonkeyNft, SquirrelNft, TheNorthFaceNft } from '../assets'
+import { FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa6'
 
 export const navLinks = [
     { label: "Home", route: '/' },
@@ -121,4 +122,46 @@ export const sellersInfo = [
 
     }
 
+]
+
+export const privacyInfo = [
+    {
+        content: "Privacy Police"
+    },
+    {
+        content: "Cooperations"
+    },
+    {
+        content: "Privacy Police"
+    },
+    {
+        content: "Sponsorship"
+    },
+    {
+        content: "Contact us"
+    },
+
+]
+export const copyright = [
+    {
+        copyright: "Copyright © [Year] [Your Name or Company Name]. All rights reserved."
+    }
+]
+
+export const socialLinks = [
+    {
+        icon: FaInstagram,
+        alt: "Instagram",
+        link: "https://www.instagram.com/davitactor/"
+    },
+    {
+        icon: FaFacebook,
+        alt: "Facebook",
+        link: "https://www.facebook.com/profile.php?id=100007557528695"
+    },
+    {
+        icon: FaGithub,
+        alt: "Github",
+        link: "https://github.com/davita101"
+    }
 ]
