@@ -1,10 +1,11 @@
 {
-  "homepage": "https://davita101.github.io/project-v1/",
+  "homepage": "http://davita101.github.io/Project-V1/",
   "name": "project-v1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
