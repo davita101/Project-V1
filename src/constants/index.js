@@ -105,7 +105,7 @@ export const sellersInfo = [
     },
     {
         img: JaysonAvatar,
-        name: "jayson",
+        name: "Jayson",
         view: "15.2k"
 
     },
@@ -162,6 +162,6 @@ export const socialLinks = [
     {
         icon: FaGithub,
         alt: "Github",
-        link: "https://github.com/davita101"
+        link: "https://www.github.com/davita101"
     }
 ]

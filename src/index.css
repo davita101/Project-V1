@@ -35,15 +35,6 @@ main{
     display: flex;
     flex-direction: column;
 }
-.active {
-    background: black;
-    color: white;
-    width: 250px;
-    right: -7.3rem;
-    padding-right: 3rem;
-    padding: .5rem;
-    border-radius: .5rem;
-}
 
 .nav--bg{
     background: hsl(0, 0%, 0%, .2);

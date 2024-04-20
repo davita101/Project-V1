@@ -28,7 +28,7 @@ function Navbar() {
 
     return (
         <div className='flex justify-between top-0 py-[1rem] nav--bg sm:px-[2rem] px-[1rem] w-full items-center fixed left-0 z-[99]'>
-            <span className='md:text-black text-white font-bold sm:text-[2em] text-[1.3em] cursor-pointer'><Link to='/' smooth={true}
+            <span title="Logo" className='md:text-black text-white font-bold sm:text-[2em] text-[1.3em] cursor-pointer'><Link to='/' smooth={true}
                 duration={300}>Davit'sApp</Link></span>
             {/* DESKTOP */}
             <ul className='md:flex hidden gap-[1rem]'>
@@ -59,7 +59,9 @@ function Navbar() {
                 <ul className='flex flex-col absolute right-[2rem] text-center top-[1rem]'>
                     {navLinks.map((item, index) => (
                         <li key={index}>
+
                             <Link
+                                onClick={() => setClick(!click)}
                                 to={item.route}
                                 activeClass='active'
                                 smooth={true}

@@ -18,12 +18,12 @@ function Footer() {
                 </ul>
                 <ul className='flex gap-[1rem]  md:justify-end  justify-center'>
                     {socialLinks.map((item, index) => (
-                        <li key={index} className=' transition-all ease-in text-[2em] cursor-pointer hover:text-blue-500 '>{<IconRenderer icon={item.icon} />}</li>
+                        <li key={index} className=' transition-all ease-in text-[2em] cursor-pointer hover:text-blue-500 '><div> <a href={item.link} title={item.alt} rel='nofollow' target='_blank'>{<IconRenderer icon={item.icon} />} </a></div></li>
                     ))}
                 </ul>
                 <div>
                     {copyright.map(item => (
-                        <p key='copyright' className='md:text-right text-center text-[.8em] opacity-[.7]'>{item.copyright}</p>
+                        <p key='copyright' title='Copyright' className='md:text-right text-center text-[.8em] opacity-[.7]'>{item.copyright}</p>
                     ))}
                 </div>
             </div>

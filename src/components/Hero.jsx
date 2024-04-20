@@ -42,7 +42,7 @@ function Hero() {
             y: 100,
             stagger: 0.05,
             duration: 2,
-            ease: 'power4.out',
+            ease: 'power2.out',
             repeat: Infinity,
 
         });
@@ -96,7 +96,7 @@ function Hero() {
                 </div>
             </div>
             <div>
-                <img id='mainNftIcon' src={Nft} alt="" />
+                <img id='mainNftIcon' title='Main NFT Img' src={Nft} alt="Main Nft Img" />
             </div>
         </div >
     )
