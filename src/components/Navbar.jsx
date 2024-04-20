@@ -28,14 +28,15 @@ function Navbar() {
 
     return (
         <div className='flex justify-between top-0 py-[1rem] nav--bg sm:px-[2rem] px-[1rem] w-full items-center fixed left-0 z-[99]'>
-            <span className='md:text-black text-white font-bold sm:text-[2em] text-[1.3em] cursor-pointer'>Davit'sApp</span>
+            <span className='md:text-black text-white font-bold sm:text-[2em] text-[1.3em] cursor-pointer'><Link to='/' smooth={true}
+                duration={300}>Davit'sApp</Link></span>
             {/* DESKTOP */}
             <ul className='md:flex hidden gap-[1rem]'>
                 {navLinks.map((item, index) => (
                     <li key={index} className='hover:text-blue-500 ease-in cursor-pointer'>
                         <Link to={item.route}
                             smooth={true}
-                            duration={500}>
+                            duration={300}>
                             {item.label}</Link>
                     </li>
 
@@ -63,11 +64,7 @@ function Navbar() {
                                 activeClass='active'
                                 smooth={true}
                                 hashSpy={true}
-                                duration={500}
-                                isDynamic={true}
-                                ignoreCancelEvents={false}
-                                spyThrottle={500}
-                                offset={scrollY > 2800 && index == 3 ? -(scrollY - 3100) : -50} // Set offset directly based on
+                                duration={300}
                                 className={`relative hover:bg-[#fff] hover:text-[black] hover:right-[-5.3rem] right-[-5.3rem] hover:w-[18rem] w-[18rem] h-[3rem] px-[1rem]  text-[1.2em] hover:shadow-lg hover:text-[1.5em] hover:px-[.5rem] hover:text-[#ffff] ease-in cursor-pointer transition-all flex items-center justify-center `}>{item.label}</Link>
                         </li>
                     ))}
