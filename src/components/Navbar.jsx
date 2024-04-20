@@ -27,17 +27,16 @@ function Navbar() {
     const handelClick = () => setClick(!click);
 
     return (
-        <div className='flex justify-between top-0 py-[1rem] md:bg-inherit nav--bg sm:px-[2rem] px-[1rem] w-full items-center fixed left-0 z-[99]'>
+        <div className='flex justify-between top-0 py-[1rem] nav--bg sm:px-[2rem] px-[1rem] w-full items-center fixed left-0 z-[99]'>
             <span className='md:text-black text-white font-bold sm:text-[2em] text-[1.3em] cursor-pointer'>Davit'sApp</span>
             {/* DESKTOP */}
-            <ul className='md:flex hidden gap-[1rem] '>
+            <ul className='md:flex hidden gap-[1rem]'>
                 {navLinks.map((item, index) => (
-                    <li key={index} className='hover:opacity-[.5] ease-in cursor-pointer'>
+                    <li key={index} className='hover:text-blue-500 ease-in cursor-pointer'>
                         <Link to={item.route}
-                            offset={(scrollY > 800 && index == 3 ? -700 : 0)} // Set offset directly based on scrollY value
-                            spy={true}
                             smooth={true}
-                            duration={500}>{item.label}</Link>
+                            duration={500}>
+                            {item.label}</Link>
                     </li>
 
                 ))}
@@ -54,14 +53,14 @@ function Navbar() {
 
             {<div className={`${!click ? 'translate-x-[500px]' : 'translate-x-0'} shadow-indigo-500/50 top-[3rem] transition-all ease-in flex md:hidden relative `}>
                 {/* BLUE BAR */}
-                <div className='rounded-[.5rem]  absolute bg-blue-600 w-[250px] h-[500px] top-[-2rem] right-[-3rem]' />
+                <div className='rounded-[.5rem]  absolute bg-blue-500 w-[250px] h-[380px] top-[-1.1rem] right-[-3rem]' />
                 {/* NAVLINKS */}
                 <ul className='flex flex-col absolute right-[2rem] text-center top-[1rem]'>
                     {navLinks.map((item, index) => (
                         <li key={index}>
                             <Link
                                 to={item.route}
-                                spy={true}
+                                activeClass='active'
                                 smooth={true}
                                 hashSpy={true}
                                 duration={500}
@@ -74,9 +73,9 @@ function Navbar() {
                     ))}
                 </ul>
                 {/* BUTTONS */}
-                <div className='flex gap-[1rem] items-center flex-col-reverse absolute right-[1.5rem] top-[20rem]'>
-                    <button className='border-2 w-[8rem]  text-center rounded-[.3rem] text-[#fff] cursor-pointer p-[.2rem]  hover:border-0 hover:bg-black hover:p-[.32rem] hover:w-[100%] hover:translate-y-[-.5rem] transition-all hover:shadow-lg'>Get Started</button>
-                    <span className='border-2 w-[8rem]  text-center rounded-[.3rem] text-[#fff] cursor-pointer p-[.2rem]  hover:border-0 hover:bg-black hover:p-[.32rem] hover:w-[100%] hover:translate-y-[-.5rem] transition-all hover:shadow-lg'>Login in</span>
+                <div className='flex gap-[1rem] items-center flex-col-reverse absolute right-[1.5rem] top-[14rem]'>
+                    <button className='border-2 w-[8rem]  text-center rounded-[.3rem] text-[#fff] cursor-pointer p-[.2rem]  hover:border-0 hover:bg-black transition-all hover:shadow-lg'>Get Started</button>
+                    <span className='border-2 w-[8rem]  text-center rounded-[.3rem] text-[#fff] cursor-pointer p-[.2rem]  hover:border-0 hover:bg-black transition-all hover:shadow-lg'>Login in</span>
                 </div>
             </div>}
         </div >

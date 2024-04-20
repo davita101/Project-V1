@@ -1,3 +1,7 @@
+
+
+{/* 
+     */}
 import { useEffect } from "react"
 import { Navbar, Hero, Info, Product, Sellers, Footer } from "./components"
 import { Element } from "react-scroll"
@@ -31,6 +35,7 @@ function App() {
     }
     const WELCOME = splitText('WELCOME')
 
+
     gsap.fromTo(WELCOME.children, {
       opacity: 0,
       y: 100,
@@ -56,52 +61,61 @@ function App() {
       delay: 5,
       display: 'none'
     })
-
-
-
-
     gsap.fromTo(mainDiv.children, {
       opacity: 0,
       stagger: .001,
       ease: 'power1.out',
+      display: 'none'
     }, {
+      delay: 5,
       opacity: 1,
       stagger: .001,
-      duration: 2,
-      delay: 5,
       ease: 'power1.out',
+      display: 'flex'
     })
+
+    gsap.to("#mainFooter", {
+      display: 'block',
+      delay: 5.0001,
+    })
+    gsap.to("#welcomeDiv", {
+      display: 'none',
+      delay: 4.5
+    })
+
   }, [])
 
 
+
   return (
-    <div className="overflow-y-hidden relative flex justify-center items-center ">
-      <div id="WELCOME" className="sm:text-[10em] text-[5em] delay-5000 absolute z-[999] top-0 text-black  ">WELCOME</div>
-      <div className="main-div">
+    <div className="overflow-hidden flex-col relative flex justify-center items-center ">
+      <div id='welcomeDiv' className="w-[100vw] h-[90vh] overflow-hidden flex justify-center items-center ">
+        <div id="WELCOME" className="sm:text-[8em] overflow-hidden text-[3em] text-black  ">WELCOME</div>
+      </div>
+      <div className="main-div overflow-y-hidden">
         <header>
           <Element name="/" >
-            <Navbar /> {/*✅*/}
+            <Navbar />
           </Element>
         </header>
-        <main>
+        <main className="mt-[3rem]">
           <Element name="/hero" >
-            <Hero /> {/*✅*/}
+            <Hero />
           </Element>
           <Element name="/info">
-            <Info /> {/*✅*/}
+            <Info />
           </Element>
           <Element name="/products">
-            <Product /> {/*✅*/}
+            <Product />
           </Element>
           <Element name="/sellers">
-            <Sellers /> {/*✅*/}
+            <Sellers />
           </Element>
         </main>
-        <footer >
+        <footer id="mainFooter">
           <Element name="/contact">
-            <Footer /> {/*✅*/}
+            <Footer />
           </Element>
-
         </footer>
       </div>
     </div>

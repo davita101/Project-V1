@@ -5,27 +5,6 @@ import gsap from "gsap"
 function NftCard() {
     const [over, setOver] = useState(true)
     const [indexCard, setIndexCard] = useState(null)
-    useEffect(() => {
-        const nftCards = document.getElementById('nftCards')
-        gsap.fromTo(nftCards.children, {
-            y: 0,
-            opacity: 1
-
-
-        }, {
-            opacity: 1,
-            y: 50, // Ending position (move up by 50 pixels)
-            duration: .1, // Duration of the animation
-            ease: 'power1.out', // Easing function for smoother animation
-            yoyo: true, // Revert to the starting position after the animation
-            repeat: 2,
-            stagger: 1,
-        })
-
-
-    }, [])
-
-
 
     const [click, setClick] = useState(false)
     return (
@@ -33,7 +12,7 @@ function NftCard() {
             {productText.map((item, index) => {
                 if (item.nftJson) {
                     return item.nftJson.map((category, index) => (
-                        <div onMouseOver={() => { setIndexCard(index), setOver(true) }} key={index} onMouseLeave={() => { setIndexCard(index), setOver(false) }} className='grid gap-[.6rem] p-[1rem] bg-white shadow-lg overflow-hidden rounded-2xl cursor-pointer transition-all hover:translate-y-[-1.5rem] hover:shadow-xl duration-[.1s] hover:bg-blue-500 ease-in '>
+                        <div onMouseOver={() => { setIndexCard(index), setOver(true) }} key={index} onMouseLeave={() => { setIndexCard(index), setOver(false) }} className='grid gap-[.6rem] p-[1rem] bg-white shadow-lg overflow-hidden rounded-2xl cursor-pointer transition-all hover:translate-y-[-1rem] hover:shadow-xl duration-[.1s] hover:bg-blue-500 ease-in '>
                             <img src={category.img} alt={category.heading} className='w-[300px] h-[250px] rounded-3xl' />
                             <h3 className='font-bold text-[1em]'>{category.heading}</h3>
                             <div className='flex justify-between'>
