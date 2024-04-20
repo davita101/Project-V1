@@ -152,16 +152,16 @@ export const socialLinks = [
     {
         icon: FaInstagram,
         alt: "Instagram",
-        link: "https://www.instagram.com/davitactor/"
+        link: "https://instagram.com/davitactor/"
     },
     {
         icon: FaFacebook,
         alt: "Facebook",
-        link: "https://www.facebook.com/profile.php?id=100007557528695"
+        link: "https://facebook.com/profile.php?id=100007557528695"
     },
     {
         icon: FaGithub,
         alt: "Github",
-        link: "https://www.github.com/davita101"
+        link: "https://github.com/davita101"
     }
 ]
